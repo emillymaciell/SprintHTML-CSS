@@ -1,0 +1,18 @@
+@import url(header.css);
+@import url(footer.css);
+@import url(home.css);
+
+:root {
+    --azul: #1b357e;
+    --azul-claro: #1351d8;
+    --branco: #ffffff;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: var(--branco);
+    color: var(--azul);
+}
