@@ -28,3 +28,18 @@
 .rodape__logo {
     width: 5rem;
 }
+
+@media (min-width: 768px) {
+    .rodape {
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 1.5rem 2rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .rodape {
+        padding: 1.5rem 1.5rem;
+        justify-content: space-between;
+    }
+}

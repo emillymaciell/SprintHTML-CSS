@@ -96,6 +96,37 @@
     border-radius: 0.25rem;
 }
 
-/* .lancamento__botao:hover {
-    background-color: var(--azul);
-} */
+@media (min-width: 768px) {
+    .lancamento {
+        padding: 2rem 4rem;
+    }
+
+    .lancamento__comparacao {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .lancamento__card {
+        width: 65%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .lancamento {
+        padding: 2rem 8rem;
+    }
+
+    .lancamento__imagem {
+        height: 16rem;
+    }
+
+    .lancamento__video-wrapper {
+        width: 60vw;
+        margin: 0 auto;
+        padding-bottom: calc(60vw * 0.5625);
+    }
+
+    .lancamento__botao:hover {
+        background-color: var(--azul);
+    }
+}

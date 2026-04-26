@@ -22,3 +22,19 @@
     text-decoration: none;
     font-weight: bold;
 }
+
+@media (min-width: 768px) {
+    .banner__imagem {
+        max-width: 90vw;
+    }
+
+    .banner p {
+        font-size: 1.25rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .banner__imagem {
+        max-width: 80vw;
+    }
+}

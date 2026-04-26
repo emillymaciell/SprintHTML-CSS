@@ -51,3 +51,34 @@
     font-size: 1rem;
     align-self: center;
 }
+
+@media (min-width: 768px) {
+    .contato {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 2rem;
+        padding: 2rem 4rem;
+    }
+
+    .contato__imagem {
+        width: 50%;
+        height: auto;
+    }
+
+    .contato__formulario {
+        width: 60%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .contato {
+        padding: 2rem 8rem;
+        flex: 1;
+    }
+
+    .contato__imagem {
+        height: 20rem;
+        object-fit: contain;
+    }
+}

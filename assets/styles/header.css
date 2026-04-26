@@ -41,7 +41,7 @@
     position: absolute;
     top: 100%;
     right: 0;
-    width: 60vw; /* AJUSTAR TAMANHOOOOOOOOOOOO */
+    width: 60vw;
     z-index: 100;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
@@ -69,4 +69,46 @@
 
 .container__botao {
     display: none;
+}
+
+@media (min-width: 768px) {
+    .cabecalho__menu-hamburger,
+    .container__botao {
+        display: none;
+    }
+
+    .container:last-child {
+        margin-right: 2rem;
+    }
+
+    .cabecalho__menu {
+        display: block;
+        position: static;
+        width: auto;
+        box-shadow: none;
+    }
+
+    .cabecalho__lista {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .cabecalho__titulo,
+    .cabecalho__item {
+        padding: 0.75rem 1.5rem;
+    }
+}
+
+@media (min-widht: 1200px) {
+    .container__logo {
+        width: 10rem;
+    }
+
+    .cabecalho__link {
+        font-size: 1.1rem;
+    }
+
+    .container:last-child {
+        margin-right: 4rem;
+    }
 }
