@@ -1,0 +1,101 @@
+.lancamento {
+    display: flex;
+    flex: 1;
+    padding: 1rem;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.lancamento__video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+.lancamento__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.lancamento__descricao {
+    margin-top: 1rem;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.lancamento__comparacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.lancamento__card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.lancamento__info {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.lancamento__card-textos {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    flex: 1;
+}
+
+.lancamento__imagem {
+    width: 100%;
+    height: 12rem;
+    object-fit: contain;
+    display: block;
+}
+
+.lancamento__card-info {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+}
+
+.lancamento__checkbox {
+    width: 1rem;
+    height: 1rem;
+}
+
+.lancamento__card-nome {
+    font-weight: bold;
+    color: var(--azul-claro);
+    line-height: 1.4;
+}
+
+.lancamento__card-preco {
+    font-size: 0.9rem;
+}
+
+.lancamento__botao {
+    display: block;
+    margin: 1rem auto 0;
+    padding: 0.75rem 2rem;
+    background-color: var(--azul-claro);
+    color: var(--branco);
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+}
+
+/* .lancamento__botao:hover {
+    background-color: var(--azul);
+} */
