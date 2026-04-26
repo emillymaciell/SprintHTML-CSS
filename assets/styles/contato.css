@@ -55,6 +55,7 @@
 @media (min-width: 768px) {
     .contato {
         display: flex;
+        flex: 1;
         flex-direction: row;
         align-items: flex-start;
         gap: 2rem;
@@ -75,6 +76,10 @@
     .contato {
         padding: 2rem 8rem;
         flex: 1;
+    }
+
+    .contato__textarea{
+        min-height: 3rem;
     }
 
     .contato__imagem {
