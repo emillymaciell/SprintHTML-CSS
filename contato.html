@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ford</title>
+    <link rel="stylesheet" href="assets/styles/reset.css">
+    <link rel="stylesheet" href="assets/styles/styles.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="container">
+            <img src="assets/imgs/logo-ford-256.png" alt="Logo da Ford" class="container__logo">
+        </div>
+        <div class="container">
+            <input type="checkbox" id="menu" class="container__botao" />
+            <label for="menu">
+                <span class="cabecalho__menu-hamburger container__imagem"></span>
+            </label>
+            <nav class="cabecalho__menu">
+                <ul class="cabecalho__lista">
+                    <li class="cabecalho__item"><a href="index.html" class="cabecalho__link">Home</a></li>
+                    <li class="cabecalho__item"><a href="lancamento.html" class="cabecalho__link">Lançamento</a></li>
+                    <li class="cabecalho__titulo"><a href="contato.html" class="cabecalho__link">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="contato">
+        <img src="assets/imgs/xls 2.2 diesel.jpg" alt="Ford XLS 2.2 Diesel" class="contato__imagem">
+        <section class="contato__formulario">
+            <h2 class="contato__titulo">Sobre Você</h2>
+            <form class="contato__form">
+                <label for="nome" class="contato__label"></label>
+                <input type="text" placeholder="NOME DE USUÁRIO *" class="contato__input contato__textarea" required>
+                <label for="email" class="contato__label"></label>
+                <input type="email" placeholder="E-MAIL *" class="contato__input contato__textarea" required>
+
+                <label for="telefone" class="contato__label"></label>
+                <input type="tel" placeholder="TELEFONE *" class="contato__input contato__textarea" pattern="[0-9]*" inputmode="numeric" required>
+
+                <select class="contato__input contato__select" required>
+                    <option value="" disabled selected>TIPO DO CONTATO</option>
+                    <option value="elogio">Elogio</option>
+                    <option value="sugestao">Sugestão</option>
+                    <option value="reclamacao">Reclamação</option>
+                </select>
+                <textarea placeholder="MENSAGEM" class="contato__input contato__textarea"></textarea>
+                <button type="submit" class="contato__botao">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="rodape__redes">
+            <span>Redes Sociais</span>
+            <a href="https://www.facebook.com/FordBrasil/?locale=pt_BR" target="_blank" class="rodape__link"><img
+                    src="assets/imgs/facebook-50.png" alt="Facebook"></a>
+            <a href="https://www.youtube.com/fordbrasil" target="_blank" class="rodape__link"><img
+                    src="assets/imgs/youtube-squared-50.png" alt="YouTube"></a>
+            <a href="https://www.instagram.com/fordbrasil/" target="_blank" class="rodape__link"><img
+                    src="assets/imgs/instagram-logo-50.png" alt="Instagram"></a>
+        </div>
+        <p class="rodape__copyright">&copy; 2025 Ford Brasil Ltda. Todos os direitos reservados.</p>
+        <img src="assets/imgs/ford-96.png" alt="Logo da Ford" class="rodape__logo">
+    </footer>
+
+</body>
+
+</html>

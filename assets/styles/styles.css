@@ -2,11 +2,13 @@
 @import url(footer.css);
 @import url(home.css);
 @import url(lancamento.css);
+@import url(contato.css);
 
 :root {
     --azul: #1b357e;
     --azul-claro: #1351d8;
     --branco: #ffffff;
+    --cinza-claro: #ccc;
 }
 
 body {
