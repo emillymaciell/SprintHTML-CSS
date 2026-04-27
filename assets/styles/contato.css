@@ -51,6 +51,7 @@
     padding: 0.75rem 2rem;
     font-size: 1rem;
     align-self: center;
+    border-radius: 0.25rem;
 }
 
 @media (min-width: 768px) {
@@ -70,6 +71,11 @@
 
     .contato__formulario {
         width: 60%;
+    }
+
+    .contato__botao:hover {
+        background-color: var(--azul);
+        cursor: pointer;
     }
 }
 
