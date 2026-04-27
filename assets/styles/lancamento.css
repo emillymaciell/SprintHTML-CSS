@@ -103,11 +103,12 @@
 
     .lancamento__comparacao {
         flex-direction: row;
-        justify-content: flex-start;
+        justify-content: space-between;
+        align-items: flex-start;
     }
 
     .lancamento__card {
-        width: 65%;
+        width: 30%;
     }
 }
 
