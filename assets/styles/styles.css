@@ -19,3 +19,7 @@ body {
     background: var(--branco);
     color: var(--azul);
 }
+
+html {
+    overflow-y: scroll;
+}

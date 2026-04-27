@@ -15,6 +15,7 @@
 .banner p {
     margin-top: 1.5rem;
     text-align: center;
+    width: 100%;
 }
 
 .banner p a {

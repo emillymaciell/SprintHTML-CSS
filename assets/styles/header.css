@@ -78,19 +78,26 @@
     }
 
     .container:last-child {
-        margin-right: 2rem;
+        margin-right: 0;
+        position: static;
     }
 
     .cabecalho__menu {
         display: block;
-        position: static;
-        width: auto;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: max-content;
         box-shadow: none;
     }
 
     .cabecalho__lista {
         display: flex;
         flex-direction: row;
+        padding: 0;
+        margin: 0;
+        list-style: none;
     }
 
     .cabecalho__titulo,
@@ -109,6 +116,6 @@
     }
 
     .container:last-child {
-        margin-right: 4rem;
+        margin-right: 0;
     }
 }
