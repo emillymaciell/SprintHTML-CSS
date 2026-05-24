@@ -82,7 +82,6 @@
 @media (min-width: 1200px) {
     .contato {
         padding: 2rem 8rem;
-        flex: 1;
     }
 
     .contato__textarea{

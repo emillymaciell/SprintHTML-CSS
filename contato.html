@@ -7,6 +7,7 @@
     <title>Ford</title>
     <link rel="stylesheet" href="assets/styles/reset.css">
     <link rel="stylesheet" href="assets/styles/styles.css">
+    <script src="assets/js/form.js"></script>
 </head>
 
 <body>
@@ -33,22 +34,20 @@
         <img src="assets/imgs/xls 2.2 diesel.jpg" alt="Ford XLS 2.2 Diesel" class="contato__imagem">
         <section class="contato__formulario">
             <h2 class="contato__titulo">Sobre Você</h2>
-            <form class="contato__form">
-                <label for="nome" class="contato__label"></label>
-                <input type="text" placeholder="NOME DE USUÁRIO *" class="contato__input contato__textarea" required>
-                <label for="email" class="contato__label"></label>
-                <input type="email" placeholder="E-MAIL *" class="contato__input contato__textarea" required>
-
-                <label for="telefone" class="contato__label"></label>
-                <input type="tel" placeholder="TELEFONE *" class="contato__input contato__textarea" pattern="[0-9]*" inputmode="numeric" required>
-
-                <select class="contato__input contato__select" required>
+            <form class="contato__form" onsubmit="return Post(this);">
+                <input type="text" name="nome" placeholder="NOME DE USUÁRIO *" class="contato__input contato__textarea"
+                    required>
+                <input type="email" name="email" placeholder="E-MAIL *" class="contato__input contato__textarea"
+                    required>
+                <input type="tel" name="telefone" placeholder="TELEFONE *" class="contato__input contato__textarea"
+                    pattern="[0-9]*" inputmode="numeric" required>
+                <select name="tipoContato" class="contato__input contato__select" required>
                     <option value="" disabled selected>TIPO DO CONTATO</option>
                     <option value="elogio">Elogio</option>
                     <option value="sugestao">Sugestão</option>
                     <option value="reclamacao">Reclamação</option>
                 </select>
-                <textarea placeholder="MENSAGEM" class="contato__input contato__textarea"></textarea>
+                <textarea name="mensagem" placeholder="MENSAGEM" class="contato__input contato__textarea"></textarea>
                 <button type="submit" class="contato__botao">Enviar</button>
             </form>
         </section>
