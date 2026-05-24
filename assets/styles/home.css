@@ -9,28 +9,86 @@
 
 .banner__imagem {
     width: 100%;
+    max-width: 100%;
+    height: auto;
     display: block;
+    min-width: 0;
 }
 
-.banner p {
-    margin-top: 1.5rem;
+#carousel-title {
+    margin-top: 12px;
     text-align: center;
+}
+
+#carousel-title a {
+    color: var(--azul);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#carousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
 }
 
-.banner p a {
-    color: var(--azul-claro);
-    text-decoration: none;
-    font-weight: bold;
+.carousel-wrapper {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-btn {
+    background: rgba(27, 53, 126, 0.55);
+    color: #fff;
+    border: none;
+    font-size: 2rem;
+    padding: 40px 12px;
+    margin: 0 8px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition:
+        background 0.2s ease,
+        opacity 0.2s ease;
+    opacity: 0;
+}
+
+.carousel-wrapper:hover .carousel-btn {
+    opacity: 1;
+}
+
+.carousel-btn:hover {
+    background: rgba(27, 53, 126, 0.9);
+}
+
+.carousel-dots {
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.carousel-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: none;
+    background: #ccc;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    padding: 0;
+}
+
+.carousel-dot--active {
+    background: var(--azul-claro);
 }
 
 @media (min-width: 768px) {
     .banner__imagem {
         max-width: 90vw;
-    }
-
-    .banner p {
-        font-size: 1.25rem;
     }
 }
 
