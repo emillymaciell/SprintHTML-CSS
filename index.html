@@ -29,10 +29,19 @@
         </div>
     </header>
 
-    <section class="banner">
-        <a href="lancamento.html"><img src="assets/imgs/imagem_1.jpg" alt="Ranger Ford" class="banner__imagem"></a>
-        <p>Essa é a nova Ranger Ford 2022. Verifique novidades <a href="lancamento.html">aqui</a></p>
-    </section>
+    <main>
+        <div id="carousel">
+        </div>
+        <div id="carousel-title">
+        </div>
+        <script>
+            //insert each image on carousel
+            carouselArr.push(new Carousel("assets/img/imagem_1.jpg", "Esta é a nova Ranger Ford 2022. Verifique novidades.", "assets/html/lancamento.html"));
+            carouselArr.push(new Carousel("assets/img/imagem_2.jpg", "Ford a nossa história", "#"));
+            carouselArr.push(new Carousel("assets/img/imagem_3.jpg", "Nova Ford Bronco Sport 2022", "assets/html/lancamento.html"));
+            Carousel.Start(carouselArr);
+        </script>
+    </main>
 
     <footer class="rodape">
         <div class="rodape__redes">
