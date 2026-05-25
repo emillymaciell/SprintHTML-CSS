@@ -53,7 +53,9 @@ class Carousel {
         carouselDiv.innerHTML = `
             <div class="carousel-wrapper">
                 <button class="carousel-btn" onclick="Carousel.Next(-1)">&#8592;</button>
-                <img src="${item.image}" class="banner__imagem">
+                 <a href="${item.url}">
+                    <img src="${item.image}" style="width:100%; height:auto; display:inline-block; cursor:pointer;">
+                </a>
                 <button class="carousel-btn" onclick="Carousel.Next(1)">&#8594;</button>
             </div>
             <div class="carousel-dots">${dots}</div>
