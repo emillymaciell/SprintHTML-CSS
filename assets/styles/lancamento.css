@@ -129,7 +129,7 @@ div#compare td {
 div#compare td:nth-child(1) {
     font-weight: 700;
     width: 40%;
-    color: var(--azul-claro);
+    color: var(--azul);
 }
 
 div#compare tr:nth-child(even) {
