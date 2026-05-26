@@ -54,7 +54,7 @@ class Carousel {
             <div class="carousel-wrapper">
                 <button class="carousel-btn" onclick="Carousel.Next(-1)">&#8592;</button>
                  <a href="${item.url}">
-                    <img src="${item.image}" style="width:100%; height:auto; display:inline-block; cursor:pointer;">
+                    <img src="${item.image}" class="carousel-image">
                 </a>
                 <button class="carousel-btn" onclick="Carousel.Next(1)">&#8594;</button>
             </div>
